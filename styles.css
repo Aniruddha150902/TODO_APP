@@ -108,7 +108,7 @@ body {
 .todolistcontent {
     display: flex;
     align-items: center;
-    max-width: 75%;
+    width: 75%;
 }
 .todolisttext {
     max-width: inherit;
