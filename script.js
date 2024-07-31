@@ -38,7 +38,7 @@ function addTodo() {
     const tododate = document.getElementById('datepicker');
     const todoul = document.getElementById('todoul');
 
-    todoinput.value = todoinput.value.trim();
+    todoinput.value = todoinput.value.replace(/\s+/g,' ').trim();;
 
     if(!todoinput.value) {
         alertMessage('Please enter your TODO text!!', 'red');
@@ -169,7 +169,7 @@ function saveedit(ev) {
 
     const todoinput = document.getElementById('todoinput');
 
-    todoinput.value = todoinput.value.trim();
+    todoinput.value = todoinput.value.replace(/\s+/g,' ').trim();;
 
     if(!todoinput.value) {
         alertMessage('Please enter your TODO text!!', 'red');
